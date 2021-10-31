@@ -29,7 +29,8 @@ function genCard1(){
             for(let i=0; i< result.length; i++) {
                 tmp+=` 
             <div class='col'>
-                <img src="${result[i].image}" class="card-img-top img-fluid mt-4"  alt="...">
+            <div class="card" style="width: 18rem; height: 10rem">
+                <img src="${result[i].image}" class="card-img-top mt-4 "  style="width: 8rem; height: 10rem" alt="...">
                 <div class="card-body ">
                     <div class="raiting"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
                     <h5 class="product display-9 text-secondary">${result[i].title}</h5>
