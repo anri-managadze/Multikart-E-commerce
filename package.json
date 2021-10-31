@@ -1,20 +1,20 @@
 {
   "author": "",
   "bugs": {
-    "url": "https://github.com/anri-managadze/lvl1-Anri-M/issues"
+    "url": "https://github.com/anri-managadze/Multikart-E-commerce"
   },
   "dependencies": {
     "bootstrap": "^5.0.1",
     "lodash": "^4.17.21"
   },
   "description": "",
-  "homepage": "https://github.com/anri-managadze/lvl1-Anri-M#readme",
+  "homepage": "https://github.com/anri-managadze/Multikart-E-commerce.git",
   "license": "ISC",
   "main": "src/script.js",
   "name": "lvl1",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anri-managadze/lvl1-Anri-M.git"
+    "url": "git+https://github.com/anri-managadze/Multikart-E-commerce.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
