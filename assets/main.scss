@@ -1,0 +1,303 @@
+@use '../node_modules/bootstrap/scss/bootstrap';
+
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul{
+  li{
+    padding: 0;
+    list-style: none;
+  }
+}
+.menu_logo{
+  padding: 30px 0;
+}
+.menu_logo, .save_banner, .spec_text, .spec_card, .excl_text, .excl_card, .offer_card, .foot_first_line, .foot_second_line, .foot_third_line, .welcome_text, .logo_whowear, .coll_banner, .main_container{
+  width:85%;
+  margin: 0 auto;
+}
+.offcanvas {
+  width: 300px;
+}
+footer {
+  background: #F8F8F8;
+}
+.foot_second_line {
+  a, .a {
+    font-size: 13px;
+    line-height: 3;
+    color: #6C757D;
+  }
+  .col-7 i {
+    color: black;
+    font-size: 15px;
+  }
+}
+.offcanvas-body {
+  line-height: 2.8;
+  cursor: pointer;
+}
+
+/*hover dropdown start*/
+.dropdown {
+  /* Border */
+  display: flex;
+
+  /* Reset list styles */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+
+  li {
+    /* Spacing */
+    padding: 8px;
+
+    /* Used to position the sub dropdown */
+    position: relative;
+    z-index: 1;
+  }
+  ul {
+    background: white;
+    /* Hidden by default */
+    display: none;
+
+    /* Absolute position */
+    left: 0;
+    position: absolute;
+    top: 100%;
+
+    /* Reset styles */
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 15px;
+
+    /* Width */
+    min-width: 260px;
+    z-index: 1;
+  }
+  ul ul {
+    left: 100%;
+    position: absolute;
+    top: 10px;
+    z-index: 1;
+  }
+  li:hover > ul {
+    display: block;
+    z-index: 1;
+  }
+}
+.grow .grow-1{
+  min-width: 800px;
+  right: auto;
+  left: 40%;
+  transform: translate(-40%, 0);
+  z-index: 1;
+  line-height: 2.5;
+}
+/*hover dropdowns end*/
+
+/* my boostramp class start */
+.display-7 {
+  font-size: 28px;
+}
+.display-8 {
+  font-size: 24px;
+}
+.display-9 {
+  font-size: 14px;
+}
+.display-10 {
+  font-size: 10px;
+}
+.bg-orange{
+  background: #FF4C3B;
+}
+.text-orange {
+  color: #FF4C3B;
+}
+.hover-text-orange:hover {
+  color: #FF4C3B;
+  transition: 0.3s;
+}
+.raiting{
+  color: #FFA200;
+  letter-spacing: 3px;
+}
+.color_circles{
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  margin-right: 5px;
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+.color_circles1{
+  background: #d0edff;
+}
+.color_circles2{
+  background: #f1e7e6;
+}
+.color_circles3{
+  background: #bfbfbf;
+}
+.me-10 {
+  margin-right: 500px;
+}
+
+/* my boostramp class end */
+
+/*ecommerce start*/
+.carousel-control-prev, .carousel-control-next {
+  top: -32px;
+  bottom: auto;
+  color: gray;
+  opacity: 1;
+}
+.carousel-control-prev{
+  right: 0;
+  left: 75%;
+}
+
+
+/*checkbox start*/
+nav .drop-down {
+  overflow: hidden;
+  height: 160px;
+  transition: height 0.4s ease;
+  padding: 10px;
+}
+
+nav .drop-down.closed {
+  height: 43px;
+}
+nav .drop-down.price {
+  height: 43px;
+}
+nav .drop-down.size{
+  height: 43px;
+}
+nav .drop-down.color{
+  height: 43px;
+}
+nav .drop-down li div {
+  text-decoration: none;
+  padding:0 0 10px 15px;
+}
+nav .drop-down label {
+  padding-left: 15px;
+  color: #8D7777;
+}
+nav .drop-down input {
+  color: #8D7777;
+  margin-left: 15px;
+}
+
+nav .drop-down li:first-child div:after {
+  content: "\25BC";
+  float: right;
+  margin-left: -30px;
+  margin-right: 5px;
+}
+
+
+/*round checkbox color button start*/
+.round {
+  position: relative;
+  padding: 4px 4px 7px 0;
+  margin-left: 15px;
+}
+.round label {
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 28px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 28px;
+}
+
+.round label:after {
+  border: 2px solid #4D4D4D;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 6px;
+  left: 7px;
+  opacity: 0;
+  position: absolute;
+  top: 8px;
+  transform: rotate(-45deg);
+  width: 12px;
+}
+
+.round input[id="checkbox1"] {
+  visibility: hidden;
+}
+.round input[id="checkbox1"]:checked + label {
+  background-color: #FFFFFF;
+  border-color: black;
+}
+.round input[id="checkbox2"] {
+  visibility: hidden;
+}
+.round input[id="checkbox2"]+ label {
+  background-color: #808080;
+  border-color: black;
+}
+.round input[id="checkbox3"] {
+  visibility: hidden;
+}
+.round input[id="checkbox3"]+ label {
+  background-color: #FF0000;
+  border-color: black;
+}
+.round input[id="checkbox4"] {
+  visibility: hidden;
+}
+.round input[id="checkbox4"]+ label {
+  background-color: #800080;
+  border-color: black;
+}
+.round input[id="checkbox5"] {
+  visibility: hidden;
+}
+.round input[id="checkbox5"] + label {
+  background-color: #0000FF;
+  border-color: black;
+}
+.round input[id="checkbox6"] {
+  visibility: hidden;
+}
+.round input[id="checkbox6"]+ label {
+  background-color: #FFFF00;
+  border-color: black;
+}
+.round input[id="checkbox7"] {
+  visibility: hidden;
+}
+.round input[id="checkbox7"] + label {
+  background-color: #008000;
+  border-color: black;
+}
+.round input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+/*round checkbox color button end*/
+/*checkbox end*/
+.pointer {
+  cursor: pointer;
+}
+
+
+/* price range slider start*/
+
+/* price range slider end*/
+
+/*ecommerce end*/
